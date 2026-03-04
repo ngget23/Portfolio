@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="./index.html"><span class="logo" id="logo">N</span><span id="brandName">Brand</span></a>
+    <nav class="links">
+      <a href="./index.html">Home</a>
+      <a href="./services.html">Services</a>
+      <a href="./book.html" class="btn">Book / Request</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <h1 id="heroTitle">Title</h1>
+        <p class="muted" id="heroSubtitle">Subtitle</p>
+        <div class="badges" id="badges"></div>
+
+        <div class="kpi" id="kpis"></div>
+
+        <div class="section">
+          <div class="notice" id="notice"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Quick request</h2>
+        <form id="quickForm">
+          <div class="row">
+            <label>Name<input name="name" required placeholder="Full name"></label>
+            <label>Phone<input name="phone" required placeholder="613-555-0000"></label>
+          </div>
+          <label>Email<input type="email" name="email" required placeholder="you@email.com"></label>
+          <label>What do you need?<textarea name="need" required rows="4" placeholder="Tell us what you want."></textarea></label>
+          <button class="btn full" type="submit">Send request</button>
+          <p class="small muted" id="quickFormMsg" hidden></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Featured</h2>
+      <p class="muted" id="featuredCopy"></p>
+      <div class="grid" id="cards"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>FAQ</h2>
+      <div class="faq" id="faq"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="small muted">© <span id="year"></span> <span id="brandName2">Brand</span></div>
+    <div class="small muted" id="footerLine">Ottawa, ON</div>
+  </div>
+</footer>
+
+<script type="module">
+  import { loadSite, setText, setHTML, renderFAQ, hookFAQ, saveLead, hookForm } from "./assets/app.js";
+
+  const site = await loadSite();
+  document.title = site.meta.title;
+
+  setText("logo", site.meta.logo);
+  setText("brandName", site.meta.name);
+  setText("brandName2", site.meta.name);
+  setText("heroTitle", site.home.heroTitle);
+  setText("heroSubtitle", site.home.heroSubtitle);
+  setText("featuredCopy", site.home.featuredCopy);
+  setText("footerLine", site.meta.footerLine);
+  setText("notice", site.home.notice);
+  setText("year", new Date().getFullYear());
+
+  setHTML("badges", site.home.badges.map(b=>`<div class="badge">${b}</div>`).join(""));
+  setHTML("kpis", site.home.kpis.map(k=>`
+    <div class="box"><div class="num">${k.num}</div><div class="lab">${k.lab}</div></div>
+  `).join(""));
+
+  setHTML("cards", site.home.cards.map(c=>`
+    <div class="card">
+      <h3>${c.title}</h3>
+      <p class="muted">${c.desc}</p>
+      <div class="badges">${c.tags.map(t=>`<div class="badge">${t}</div>`).join("")}</div>
+    </div>
+  `).join(""));
+
+  setHTML("faq", renderFAQ(site.faq));
+  hookFAQ();
+
+  hookForm("quickForm", (data)=>{
+    saveLead({ site: site.meta.name, type: "quick", data });
+  });
+</script>
+</body>
+</html>

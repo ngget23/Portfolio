@@ -1,0 +1,41 @@
+{
+  "meta": { "title": "Ottawa HandyWorks", "name": "Ottawa HandyWorks", "logo": "H", "footerLine": "Ottawa, ON • Insured • Weekday bookings" },
+  "home": {
+    "heroTitle": "Repairs and installs with clear pricing requests.",
+    "heroSubtitle": "Customers choose the job type. You get cleaner leads.",
+    "badges": ["Fast response", "Clear scope", "Service area"],
+    "kpis": [{"num":"1–2","lab":"day response goal"},{"num":"0","lab":"hidden fees"},{"num":"10+","lab":"job types"}],
+    "notice": "Demo only. Real build can accept deposits by invoice/e-transfer.",
+    "featuredCopy": "Built for home services that need better leads.",
+    "cards": [
+      {"title":"Job type picker","desc":"TV mount, drywall patch, faucet swap, etc.","tags":["Lead quality","Speed"]},
+      {"title":"Estimate calculator","desc":"Base job + add-ons like materials.","tags":["Interactive","Transparent"]},
+      {"title":"FAQ","desc":"Insurance, timelines, cancellation policy.","tags":["Trust","Less calls"]}
+    ]
+  },
+  "services": {
+    "title": "What we do",
+    "subtitle": "Common jobs booked weekly.",
+    "serviceArea": "Ottawa + nearby (demo).",
+    "items": [
+      {"name":"Mounting","desc":"TVs, shelves, frames.","points":["Level install","Clean finish"]},
+      {"name":"Drywall repairs","desc":"Patches and touch-ups.","points":["Smooth blend","Paint-ready"]},
+      {"name":"Plumbing swaps","desc":"Faucets and fixtures.","points":["Leak checks","Fast service"]}
+    ]
+  },
+  "book": {
+    "title":"Request a quote",
+    "subtitle":"Pick the job and add details. We reply with a confirmed price range.",
+    "formTitle":"Quote request",
+    "services":["TV mount","Drywall patch","Faucet swap","Door hardware","Other"]
+  },
+  "estimate": {
+    "packages":[{"name":"Small job visit","price":90},{"name":"Standard install","price":160},{"name":"Half-day block","price":320}],
+    "addons":[{"name":"Materials pickup","price":25},{"name":"Heavy TV add-on","price":35},{"name":"Same-day request","price":40},{"name":"Second item install","price":60}]
+  },
+  "faq":[
+    {"q":"Are you insured?","a":"Yes (demo). You can list coverage details."},
+    {"q":"How do you price jobs?","a":"Base job + add-ons, confirmed after photos."},
+    {"q":"Do you do weekends?","a":"Limited weekend slots based on demand."}
+  ]
+}

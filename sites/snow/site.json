@@ -1,0 +1,41 @@
+{
+  "meta": { "title": "Nova Snow & Lawn Ottawa", "name": "Nova Snow & Lawn", "logo": "N", "footerLine": "Ottawa, ON • Snow removal • Lawn care" },
+  "home": {
+    "heroTitle": "Snow removal quotes in under 60 seconds.",
+    "heroSubtitle": "Customers pick property type and service level. You get clean leads and fewer calls.",
+    "badges": ["Instant estimate", "Service area", "Season plans"],
+    "kpis": [{"num":"5cm+","lab":"trigger demo"},{"num":"24/7","lab":"storm coverage"},{"num":"2025–26","lab":"season quotes"}],
+    "notice": "Demo only. Real build can collect addresses and send a confirmed quote by email.",
+    "featuredCopy": "Built for winter services that need fast quotes and trust.",
+    "cards": [
+      {"title":"Quote builder","desc":"Driveway size + add-ons.","tags":["Interactive","Upsell"]},
+      {"title":"Ticket request","desc":"Customers can report missed spots.","tags":["Support","Retention"]},
+      {"title":"Season plans","desc":"Clear options reduce price shopping.","tags":["Clarity","Sales"]}
+    ]
+  },
+  "services": {
+    "title": "Snow and lawn services",
+    "subtitle": "Choose a plan that matches your property.",
+    "serviceArea": "Ottawa, Kanata, Nepean, Orleans (demo).",
+    "items": [
+      {"name":"Residential snow clearing","desc":"Driveway + walkway options.","points":["Reliable","Fast response"]},
+      {"name":"Commercial snow service","desc":"Parking lot clearing.","points":["Fleet-ready","Priority routes"]},
+      {"name":"Spring lawn cleanup","desc":"Seasonal cleanup and mulch.","points":["Booked online","Fixed pricing"]}
+    ]
+  },
+  "book": {
+    "title":"Request a quote",
+    "subtitle":"Pick service type and preferred start date.",
+    "formTitle":"Quote request",
+    "services":["Residential snow","Commercial snow","Lawn cleanup","Weekly lawn care","Other"]
+  },
+  "estimate": {
+    "packages":[{"name":"Residential basic","price":299},{"name":"Residential plus","price":399},{"name":"Commercial basic","price":699}],
+    "addons":[{"name":"Front walkway add-on","price":60},{"name":"Corner lot add-on","price":50},{"name":"Ice control","price":85},{"name":"Same-day start","price":40},{"name":"Second property discount","price":-50}]
+  },
+  "faq":[
+    {"q":"How do you price?","a":"Base plan plus add-ons like walkway and corner lot."},
+    {"q":"When do you clear snow?","a":"Typically after accumulation thresholds. Demo policy."},
+    {"q":"Can I request extra service?","a":"Yes. Submit a ticket and we confirm."}
+  ]
+}

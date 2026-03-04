@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="./index.html"><span class="logo" id="logo">N</span><span id="brandName">Brand</span></a>
+    <nav class="links">
+      <a href="./index.html">Home</a>
+      <a href="./services.html">Services</a>
+      <a href="./book.html" class="btn">Book / Request</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="wrap">
+    <h1 id="title">Book</h1>
+    <p class="muted" id="sub"></p>
+
+    <div class="grid" style="grid-template-columns:1fr 1fr">
+      <div class="card">
+        <h2 id="formTitle">Request</h2>
+        <form id="bookForm">
+          <div class="row">
+            <label>Name<input name="name" required></label>
+            <label>Email<input name="email" type="email" required></label>
+          </div>
+          <div class="row">
+            <label>Phone<input name="phone" required></label>
+            <label>Preferred date<input name="date" type="date" required></label>
+          </div>
+          <label>Service<select name="service" id="serviceSelect" required></select></label>
+          <label>Notes<textarea name="notes" rows="4" required placeholder="Details help us prepare."></textarea></label>
+          <button class="btn full" type="submit">Submit request</button>
+          <p class="small muted" id="bookFormMsg" hidden></p>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2>Instant estimate</h2>
+        <p class="muted">This demo calculates an estimate. Real sites can collect payment by e-transfer or invoice.</p>
+
+        <label>Package<select id="pkg"></select></label>
+        <label>Add-ons<select id="addon" multiple size="5"></select></label>
+        <div class="hr"></div>
+        <div class="kpi" style="grid-template-columns:1fr">
+          <div class="box">
+            <div class="lab muted">Estimated total</div>
+            <div class="num" id="est">$0</div>
+          </div>
+        </div>
+        <p class="small muted">Tip: use this section to upsell add-ons.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="small muted">© <span id="year"></span> <span id="brandName2">Brand</span></div>
+    <div class="small muted" id="footerLine">Ottawa</div>
+  </div>
+</footer>
+
+<script type="module">
+  import { loadSite, setText, setHTML, money, saveLead, hookForm } from "./assets/app.js";
+  const site = await loadSite();
+  document.title = site.meta.title + " | Book";
+
+  setText("logo", site.meta.logo);
+  setText("brandName", site.meta.name);
+  setText("brandName2", site.meta.name);
+  setText("footerLine", site.meta.footerLine);
+  setText("title", site.book.title);
+  setText("sub", site.book.subtitle);
+  setText("formTitle", site.book.formTitle);
+  setText("year", new Date().getFullYear());
+
+  const serviceSelect = document.getElementById("serviceSelect");
+  serviceSelect.innerHTML = site.book.services.map(s=>`<option value="${s}">${s}</option>`).join("");
+
+  // Estimate calculator
+  const pkg = document.getElementById("pkg");
+  const addon = document.getElementById("addon");
+  const est = document.getElementById("est");
+
+  pkg.innerHTML = site.estimate.packages.map(p=>`<option value="${p.price}">${p.name} (${money(p.price)})</option>`).join("");
+  addon.innerHTML = site.estimate.addons.map(a=>`<option value="${a.price}">${a.name} (+${money(a.price)})</option>`).join("");
+
+  function calc(){
+    const base = Number(pkg.value || 0);
+    const adds = [...addon.selectedOptions].reduce((sum,o)=>sum + Number(o.value||0), 0);
+    est.textContent = money(base + adds);
+  }
+  pkg.addEventListener("change", calc);
+  addon.addEventListener("change", calc);
+  calc();
+
+  hookForm("bookForm", (data)=>{
+    saveLead({ site: site.meta.name, type: "booking", data, estimate: est.textContent });
+  });
+</script>
+</body>
+</html>

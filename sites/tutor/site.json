@@ -1,0 +1,41 @@
+{
+  "meta": { "title": "Ottawa StudyLab Tutoring", "name": "Ottawa StudyLab", "logo": "S", "footerLine": "Ottawa, ON • In-person and online" },
+  "home": {
+    "heroTitle": "Tutoring that shows progress every week.",
+    "heroSubtitle": "Students pick a subject, grade, and schedule. Parents get a clear plan.",
+    "badges": ["Subject matching", "Schedule requests", "Online option"],
+    "kpis": [{"num":"1:1","lab":"private sessions"},{"num":"7 days","lab":"progress check"},{"num":"K–12","lab":"all grades"}],
+    "notice": "Demo only. Real build can send forms to your email and auto-confirm sessions.",
+    "featuredCopy": "Built for tutors who want fewer messages and better intake info.",
+    "cards": [
+      {"title":"Student intake","desc":"Grade, goals, learning needs, schedule.","tags":["Better matching","Less calls"]},
+      {"title":"Session request","desc":"Pick days and times and submit.","tags":["Simple booking","Fast replies"]},
+      {"title":"Resources page","desc":"Homework tips, test prep checklist.","tags":["SEO","Trust"]}
+    ]
+  },
+  "services": {
+    "title": "Subjects",
+    "subtitle": "Choose what you need help with.",
+    "serviceArea": "Ottawa + online across Canada (demo).",
+    "items": [
+      {"name":"Math","desc":"Homework support and test prep.","points":["Grade 6–12","Exam prep"]},
+      {"name":"Science","desc":"Biology, chemistry basics.","points":["Study plans","Practice sets"]},
+      {"name":"English","desc":"Essays, reading, writing.","points":["Feedback","Structure"]}
+    ]
+  },
+  "book": {
+    "title":"Request tutoring",
+    "subtitle":"Tell us the subject and availability. We confirm a tutor match.",
+    "formTitle":"Tutoring request",
+    "services":["Math","Science","English","French","Study skills"]
+  },
+  "estimate": {
+    "packages":[{"name":"Trial session (60 min)","price":45},{"name":"Weekly (4 sessions)","price":180},{"name":"Exam prep pack (6)","price":270}],
+    "addons":[{"name":"Online session","price":0},{"name":"Extra worksheets","price":10},{"name":"Parent update email","price":5},{"name":"Rush tutor match","price":15},{"name":"Group session (2 students)","price":20}]
+  },
+  "faq":[
+    {"q":"Do you tutor online?","a":"Yes. Online or in-person depending on tutor match."},
+    {"q":"How do you match tutors?","a":"We match by grade, topic, and schedule."},
+    {"q":"What do I need for the first session?","a":"Bring notes, homework, and course outline if possible."}
+  ]
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Web Co | Demo Portfolio</title>
+  <style>
+    :root{--bg:#0b0f17;--card:#111827;--line:#223045;--text:#e5e7eb;--muted:#9aa4b2;--acc:#2563eb}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text)}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1100px,calc(100% - 32px));margin:0 auto}
+    .top{padding:34px 0;border-bottom:1px solid var(--line)}
+    h1{margin:0 0 8px;font-size:clamp(28px,4vw,44px)}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:18px 0 34px}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}}
+    .card{border:1px solid var(--line);border-radius:18px;background:rgba(17,24,39,.7);padding:16px}
+    .btn{display:inline-flex;justify-content:center;background:var(--acc);border:1px solid rgba(255,255,255,.08);padding:10px 14px;border-radius:12px;font-weight:900}
+    .tag{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:6px 10px;color:var(--muted);font-weight:800;font-size:12px;width:max-content}
+    .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="tag">Demo portfolio</div>
+      <h1>Nova Web Co</h1>
+      <p class="muted">Pick a demo. Each one has multiple pages and interactive forms.</p>
+      <div class="row">
+        <a class="btn" href="mailto:youremail@gmail.com">Contact</a>
+        <a class="btn" href="./sites/detailing/index.html">Open a demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="grid">
+      <a class="card" href="./sites/clinic/index.html">
+        <div class="tag">Clinic</div>
+        <h2>Riverside Family Clinic</h2>
+        <p class="muted">Appointment request + services + FAQ.</p>
+      </a>
+
+      <a class="card" href="./sites/farm/index.html">
+        <div class="tag">Farm / CSA</div>
+        <h2>Cedar Ridge CSA Farm</h2>
+        <p class="muted">CSA sign-up + pickup options + estimate.</p>
+      </a>
+
+      <a class="card" href="./sites/detailing/index.html">
+        <div class="tag">Mobile service</div>
+        <h2>Capital Mobile Detailing</h2>
+        <p class="muted">Instant estimate + booking request.</p>
+      </a>
+
+      <a class="card" href="./sites/handyman/index.html">
+        <div class="tag">Home services</div>
+        <h2>Ottawa HandyWorks</h2>
+        <p class="muted">Quote request + job picker + estimate.</p>
+      </a>
+
+      <a class="card" href="./sites/bakery/index.html">
+        <div class="tag">Food</div>
+        <h2>Glebe Bakes & Catering</h2>
+        <p class="muted">Pre-order request + pickup scheduling.</p>
+      </a>
+
+      <a class="card" href="./sites/braids/index.html">
+        <div class="tag">Beauty</div>
+        <h2>Vanier Braids Studio</h2>
+        <p class="muted">Style picker + booking request.</p>
+      </a>
+
+      <a class="card" href="./sites/tutor/index.html">
+        <div class="tag">Education</div>
+        <h2>Ottawa StudyLab</h2>
+        <p class="muted">Student intake + schedule request.</p>
+      </a>
+
+      <a class="card" href="./sites/petgroom/index.html">
+        <div class="tag">Pets</div>
+        <h2>Paws & Go Grooming</h2>
+        <p class="muted">Pet profile + booking request.</p>
+      </a>
+
+      <a class="card" href="./sites/chef/index.html">
+        <div class="tag">Chef</div>
+        <h2>Ottawa Home Chef</h2>
+        <p class="muted">Diet intake + menu request.</p>
+      </a>
+
+      <a class="card" href="./sites/snow/index.html">
+        <div class="tag">Snow</div>
+        <h2>Nova Snow & Lawn</h2>
+        <p class="muted">Quote builder + ticket request.</p>
+      </a>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "meta": { "title": "Riverside Family Clinic", "name": "Riverside Family Clinic", "logo": "R", "footerLine": "Ottawa, ON • New patients: Waitlist" },
+  "home": {
+    "heroTitle": "Family care with faster booking requests.",
+    "heroSubtitle": "Request an appointment. Upload notes. Get a confirmation email in a real build.",
+    "badges": ["Same-week slots", "Forms online", "Mobile friendly"],
+    "kpis": [{"num":"10–15","lab":"min response goal"},{"num":"4.8★","lab":"rating demo"},{"num":"OHIP","lab":"covered visits"}],
+    "notice": "Demo only. This site stores requests locally. Real version sends to clinic inbox.",
+    "featuredCopy": "Built to reduce phone calls and collect the right info first.",
+    "cards": [
+      {"title":"Appointment requests","desc":"Collect reason, preferred date, and contact details.","tags":["Form","Validation"]},
+      {"title":"Services page","desc":"Clear list of care types and what to bring.","tags":["Clarity","SEO"]},
+      {"title":"FAQ","desc":"Insurance, hours, cancellations, prescriptions.","tags":["Self-serve","Less calls"]}
+    ]
+  },
+  "services": {
+    "title": "Clinic services",
+    "subtitle": "Common appointments and how to prepare.",
+    "serviceArea": "Serving Ottawa and nearby areas.",
+    "items": [
+      {"name":"Walk-in care (limited)","desc":"Same-day when available.","points":["Triage","Short waits"]},
+      {"name":"Family medicine","desc":"Ongoing care and follow-ups.","points":["Refills","Referrals"]},
+      {"name":"Vaccines","desc":"Seasonal and routine vaccines.","points":["Booking","Reminders"]}
+    ]
+  },
+  "book": {
+    "title":"Request an appointment",
+    "subtitle":"Pick a service and preferred date. We confirm by email.",
+    "formTitle":"Appointment request",
+    "services":["Family medicine","Vaccines","Prescription renewal","Sick visit"]
+  },
+  "estimate": {
+    "packages":[{"name":"New patient intake","price":0},{"name":"Doctor note request","price":25},{"name":"Form completion","price":40}],
+    "addons":[{"name":"Priority call-back","price":10},{"name":"Same-day request","price":15},{"name":"File transfer","price":5}]
+  },
+  "faq":[
+    {"q":"Do you accept walk-ins?","a":"Limited daily capacity. Request online first."},
+    {"q":"How do cancellations work?","a":"Cancel 24 hours ahead when possible."},
+    {"q":"Can I request a refill?","a":"Yes. Choose Prescription renewal on the booking page."}
+  ]
+}

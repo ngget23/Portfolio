@@ -1,0 +1,41 @@
+{
+  "meta": { "title": "Capital Mobile Detailing", "name": "Capital Mobile Detailing", "logo": "D", "footerLine": "Ottawa, ON • We come to you" },
+  "home": {
+    "heroTitle": "Mobile detailing. Fast booking requests.",
+    "heroSubtitle": "Pick a package, add extras, get an instant estimate.",
+    "badges": ["Mobile service", "Upfront estimates", "Weekend slots"],
+    "kpis": [{"num":"60–90","lab":"min services"},{"num":"24h","lab":"reply goal"},{"num":"5★","lab":"demo rating"}],
+    "notice": "Demo only. Real build can collect deposits by e-transfer and send confirmations.",
+    "featuredCopy": "Built for service businesses that live in DMs.",
+    "cards": [
+      {"title":"Estimate calculator","desc":"Packages + add-ons update price live.","tags":["Interactive","Upsell"]},
+      {"title":"Booking form","desc":"Collect location, car type, and time.","tags":["Lead quality","Less calls"]},
+      {"title":"FAQ","desc":"Weather policy, cancellations, what’s included.","tags":["Trust","Clarity"]}
+    ]
+  },
+  "services": {
+    "title": "Detailing packages",
+    "subtitle": "Choose a package that matches your car.",
+    "serviceArea": "Ottawa, Kanata, Nepean, Orleans (demo).",
+    "items": [
+      {"name":"Interior refresh","desc":"Vacuum, wipe-down, windows.","points":["60–90 min","Best value"]},
+      {"name":"Full interior","desc":"Deep clean seats + mats.","points":["Stain focus","Odor control"]},
+      {"name":"Wash + wax","desc":"Exterior wash with protection.","points":["Shine","Protection"]}
+    ]
+  },
+  "book": {
+    "title":"Request a booking",
+    "subtitle":"Pick a service and tell us where the car is located.",
+    "formTitle":"Booking request",
+    "services":["Interior refresh","Full interior","Wash + wax","Full package"]
+  },
+  "estimate": {
+    "packages":[{"name":"Interior refresh","price":120},{"name":"Full interior","price":220},{"name":"Full package","price":320}],
+    "addons":[{"name":"Pet hair removal","price":35},{"name":"Seat shampoo","price":50},{"name":"Headlight restore","price":40},{"name":"SUV/Truck fee","price":30},{"name":"2nd vehicle discount","price":-25}]
+  },
+  "faq":[
+    {"q":"Do you need water or power?","a":"Not required. We can be fully mobile (demo)."},
+    {"q":"What if it rains?","a":"We reschedule exterior work for free."},
+    {"q":"How long does it take?","a":"Most jobs are 60–180 minutes."}
+  ]
+}

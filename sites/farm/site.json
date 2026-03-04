@@ -1,0 +1,41 @@
+{
+  "meta": { "title": "Cedar Ridge CSA Farm", "name": "Cedar Ridge CSA Farm", "logo": "C", "footerLine": "Ottawa region • Weekly CSA pickups" },
+  "home": {
+    "heroTitle": "Local produce. Simple CSA sign-up.",
+    "heroSubtitle": "Customers choose a share size and pickup day. You collect sign-ups without DMs.",
+    "badges": ["CSA shares", "Pickup scheduling", "Seasonal updates"],
+    "kpis": [{"num":"12","lab":"week season"},{"num":"2","lab":"pickup locations"},{"num":"100%","lab":"local demo"}],
+    "notice": "Demo only. Real site can take deposits by e-transfer or invoice.",
+    "featuredCopy": "Built for farms that rely on markets and Instagram.",
+    "cards": [
+      {"title":"CSA interest form","desc":"Share size, allergies, pickup day.","tags":["Leads","Email-ready"]},
+      {"title":"Seasonal produce page","desc":"What’s in season and how to store it.","tags":["Content","SEO"]},
+      {"title":"Pickup reminders","desc":"Collect phone/email for automated reminders.","tags":["Retention","Automation"]}
+    ]
+  },
+  "services": {
+    "title": "CSA options",
+    "subtitle": "Pick a share that fits your household.",
+    "serviceArea": "Pickup: Lansdowne or Westboro (demo).",
+    "items": [
+      {"name":"Small share","desc":"1–2 people.","points":["Weekly","Great value"]},
+      {"name":"Family share","desc":"3–5 people.","points":["More variety","Best seller"]},
+      {"name":"Add-on eggs","desc":"Optional weekly add-on.","points":["Local partners","Fresh"]}
+    ]
+  },
+  "book": {
+    "title":"Join the CSA waitlist",
+    "subtitle":"Tell us your share size and pickup day.",
+    "formTitle":"CSA sign-up",
+    "services":["Small share","Family share","Add-on eggs","Market pickup only"]
+  },
+  "estimate": {
+    "packages":[{"name":"Small share deposit","price":25},{"name":"Family share deposit","price":40},{"name":"Market pickup only","price":0}],
+    "addons":[{"name":"Egg add-on deposit","price":10},{"name":"Extra greens","price":8},{"name":"Home delivery (limited)","price":12}]
+  },
+  "faq":[
+    {"q":"Where are pickups?","a":"Two pickup points in Ottawa (demo)."},
+    {"q":"Can I pause a week?","a":"Yes, with notice. We can offer a market credit."},
+    {"q":"Do you offer delivery?","a":"Limited delivery add-on depending on area."}
+  ]
+}

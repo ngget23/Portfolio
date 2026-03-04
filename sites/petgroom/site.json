@@ -1,0 +1,41 @@
+{
+  "meta": { "title": "Paws & Go Mobile Grooming", "name": "Paws & Go", "logo": "P", "footerLine": "Ottawa, ON • Mobile grooming van" },
+  "home": {
+    "heroTitle": "We come to you. Stress-free grooming.",
+    "heroSubtitle": "Pick your pet size, service, and date. We confirm and send prep steps.",
+    "badges": ["Mobile visits", "Clean intake form", "Fast confirmations"],
+    "kpis": [{"num":"60–120","lab":"min average"},{"num":"Same-week","lab":"slots demo"},{"num":"1:1","lab":"pet focus"}],
+    "notice": "Demo only. Real build can take deposits and send reminders.",
+    "featuredCopy": "Built to reduce missed appointments and collect pet details upfront.",
+    "cards": [
+      {"title":"Pet profile","desc":"Breed, coat type, age, notes.","tags":["Safer visits","Better results"]},
+      {"title":"Booking request","desc":"Choose service and time window.","tags":["Simple","Fast"]},
+      {"title":"Policy FAQ","desc":"No-shows, aggressive pets, weather.","tags":["Clear rules","Trust"]}
+    ]
+  },
+  "services": {
+    "title": "Grooming services",
+    "subtitle": "Choose what your pet needs.",
+    "serviceArea": "Serving Ottawa and nearby areas (demo).",
+    "items": [
+      {"name":"Bath + dry","desc":"Shampoo, blow-dry, brush.","points":["Sensitive skin option","De-shed add-on"]},
+      {"name":"Full groom","desc":"Bath, cut, nails, ears.","points":["Breed trims","Custom styles"]},
+      {"name":"Nail trim","desc":"Quick nail care.","points":["Fast","Low stress"]}
+    ]
+  },
+  "book": {
+    "title":"Request a grooming visit",
+    "subtitle":"Submit your pet details and preferred date.",
+    "formTitle":"Booking request",
+    "services":["Bath + dry","Full groom","Nail trim","Puppy intro","Cat grooming"]
+  },
+  "estimate": {
+    "packages":[{"name":"Small dog bath","price":75},{"name":"Full groom (small)","price":110},{"name":"Full groom (large)","price":160}],
+    "addons":[{"name":"De-shed treatment","price":25},{"name":"Matting fee (light)","price":20},{"name":"Flea/tick shampoo","price":15},{"name":"Second pet same stop","price":-15},{"name":"Cat handling add-on","price":20}]
+  },
+  "faq":[
+    {"q":"Do you need water or power?","a":"Not required in many mobile setups. Demo answer."},
+    {"q":"How do you handle anxious pets?","a":"We work 1:1 and take breaks when needed."},
+    {"q":"What if my pet is matted?","a":"We assess and confirm fees before starting."}
+  ]
+}

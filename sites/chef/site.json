@@ -1,0 +1,41 @@
+{
+  "meta": { "title": "Ottawa Home Chef Service", "name": "Ottawa Home Chef", "logo": "O", "footerLine": "Ottawa, ON • Meal prep • Private dinners" },
+  "home": {
+    "heroTitle": "Chef-made meals without subscriptions.",
+    "heroSubtitle": "Customers pick goals and dietary needs. You receive a clean request with details.",
+    "badges": ["Diet filters", "Menu request", "Delivery windows"],
+    "kpis": [{"num":"2–4","lab":"days lead time"},{"num":"Custom","lab":"diet plans"},{"num":"0","lab":"subscription pressure"}],
+    "notice": "Demo only. Real build can request deposits by invoice/e-transfer.",
+    "featuredCopy": "Built for chefs who want better intake, fewer DMs, and repeat orders.",
+    "cards": [
+      {"title":"Diet intake","desc":"Allergies, macros, dislikes.","tags":["Better fit","Safer"]},
+      {"title":"Delivery scheduling","desc":"Pick delivery day and window.","tags":["Operations","Clarity"]},
+      {"title":"Event inquiry","desc":"Guest count, theme, budget.","tags":["Higher tickets","Fast quoting"]}
+    ]
+  },
+  "services": {
+    "title": "Chef services",
+    "subtitle": "Choose a service and we confirm details.",
+    "serviceArea": "Ottawa + Gatineau area (demo).",
+    "items": [
+      {"name":"Weekly meal prep","desc":"Ready meals for busy weeks.","points":["Custom menus","Diet friendly"]},
+      {"name":"Private dinners","desc":"In-home dining experience.","points":["Special occasions","Custom menu"]},
+      {"name":"Small event catering","desc":"Office trays and gatherings.","points":["Flexible","Reliable"]}
+    ]
+  },
+  "book": {
+    "title":"Request a menu",
+    "subtitle":"Tell us your goals and schedule. We reply with a menu and price.",
+    "formTitle":"Menu request",
+    "services":["Weekly meal prep","Private dinner","Small event catering","Juice add-on","Other"]
+  },
+  "estimate": {
+    "packages":[{"name":"Meal prep (8 meals)","price":160},{"name":"Meal prep (12 meals)","price":220},{"name":"Private dinner (base)","price":280}],
+    "addons":[{"name":"Gluten-free menu","price":15},{"name":"High-protein plan","price":20},{"name":"Dessert add-on","price":35},{"name":"Delivery","price":12},{"name":"Rush (48h)","price":30}]
+  },
+  "faq":[
+    {"q":"Do you handle allergies?","a":"Yes. We confirm ingredients and avoid triggers when possible."},
+    {"q":"How does pricing work?","a":"Base package plus add-ons based on diet and delivery."},
+    {"q":"How far ahead should I book?","a":"2–4 days is common. More for events."}
+  ]
+}

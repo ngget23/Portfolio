@@ -1,0 +1,41 @@
+{
+  "meta": { "title": "Vanier Braids Studio", "name": "Vanier Braids Studio", "logo": "V", "footerLine": "Ottawa, ON • Appointment only" },
+  "home": {
+    "heroTitle": "Braids booking without the back-and-forth.",
+    "heroSubtitle": "Choose a style, pick a date, and submit your request in one minute.",
+    "badges": ["Deposits", "Style picker", "Mobile friendly"],
+    "kpis": [{"num":"$25","lab":"deposit demo"},{"num":"24h","lab":"reply goal"},{"num":"4.9★","lab":"demo rating"}],
+    "notice": "Demo only. Real build can take deposits by e-transfer or invoice.",
+    "featuredCopy": "Built for stylists who book through DMs and need cleaner requests.",
+    "cards": [
+      {"title":"Style selector","desc":"Clients pick a style and length before you reply.","tags":["Better leads","Less texting"]},
+      {"title":"Photo upload (real build)","desc":"Clients attach hair goals and inspo images.","tags":["Fewer surprises","Faster quotes"]},
+      {"title":"Policies page","desc":"Deposit, late arrivals, cancellation rules.","tags":["Clear rules","Fewer issues"]}
+    ]
+  },
+  "services": {
+    "title": "Braiding services",
+    "subtitle": "Pick a service and we confirm availability.",
+    "serviceArea": "Serving Ottawa and nearby areas.",
+    "items": [
+      {"name":"Knotless braids","desc":"Natural finish, lightweight feel.","points":["Length options","Color add-ons"]},
+      {"name":"Cornrows","desc":"Clean parts, neat lines.","points":["Men and women","Custom patterns"]},
+      {"name":"Loc retwist","desc":"Maintenance and styling.","points":["Palm roll","Style options"]}
+    ]
+  },
+  "book": {
+    "title":"Request an appointment",
+    "subtitle":"Pick a style and date. We confirm by email or text.",
+    "formTitle":"Booking request",
+    "services":["Knotless braids","Cornrows","Loc retwist","Twists","Other"]
+  },
+  "estimate": {
+    "packages":[{"name":"Cornrows (simple)","price":80},{"name":"Knotless (medium)","price":220},{"name":"Loc retwist","price":120}],
+    "addons":[{"name":"Extra length","price":35},{"name":"Boho curls add-on","price":45},{"name":"Wash and blow-dry","price":25},{"name":"Color add-on","price":30},{"name":"Same-week rush","price":40}]
+  },
+  "faq":[
+    {"q":"Do you require a deposit?","a":"Yes. Deposit holds your slot. Demo policy."},
+    {"q":"What should I bring?","a":"Hair type depends on style. We confirm after your request."},
+    {"q":"What is your cancellation policy?","a":"Cancel 48 hours ahead to move your booking. Demo policy."}
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "meta": { "title": "Glebe Bakes & Catering", "name": "Glebe Bakes & Catering", "logo": "B", "footerLine": "Ottawa, ON • Pre-order pickups" },
+  "home": {
+    "heroTitle": "Pre-order baked boxes in minutes.",
+    "heroSubtitle": "Customers request a pickup date and choose items.",
+    "badges": ["Pre-order", "Pickup scheduling", "Custom catering"],
+    "kpis": [{"num":"24h","lab":"confirm goal"},{"num":"12","lab":"box options"},{"num":"4.9★","lab":"demo rating"}],
+    "notice": "Demo only. Real build can confirm by email and request e-transfer deposits.",
+    "featuredCopy": "Built to replace messy DM orders.",
+    "cards": [
+      {"title":"Pickup requests","desc":"Choose date and pickup window.","tags":["Interactive","Less back-and-forth"]},
+      {"title":"Catering inquiry","desc":"Guest count and dietary notes.","tags":["Lead quality","Fast quoting"]},
+      {"title":"FAQ","desc":"Allergens, storage, pickup policy.","tags":["Trust","Clarity"]}
+    ]
+  },
+  "services": {
+    "title": "Menu",
+    "subtitle": "Popular items and catering options.",
+    "serviceArea": "Pickup in Ottawa (demo).",
+    "items": [
+      {"name":"Cookie box","desc":"Assorted cookies.","points":["Great gift","Fan favourite"]},
+      {"name":"Cupcake tray","desc":"Custom flavors.","points":["Events","Birthdays"]},
+      {"name":"Catering","desc":"Small events to office trays.","points":["Diet options","On-time"]}
+    ]
+  },
+  "book": {
+    "title":"Pre-order request",
+    "subtitle":"Choose what you want and preferred pickup date.",
+    "formTitle":"Pre-order",
+    "services":["Cookie box","Cupcake tray","Catering inquiry","Custom order"]
+  },
+  "estimate": {
+    "packages":[{"name":"Cookie box (12)","price":28},{"name":"Cupcake tray (12)","price":36},{"name":"Event catering (base)","price":120}],
+    "addons":[{"name":"Gluten-free option","price":8},{"name":"Gift note","price":2},{"name":"Rush request","price":15},{"name":"Extra dozen","price":24}]
+  },
+  "faq":[
+    {"q":"Do you handle allergies?","a":"We can offer options but cross-contact is possible (demo)."},
+    {"q":"How do pickups work?","a":"Choose a date. We confirm your time window."},
+    {"q":"Do you deliver?","a":"Limited delivery for catering orders (demo)."}
+  ]
+}
